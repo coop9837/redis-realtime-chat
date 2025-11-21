@@ -170,31 +170,4 @@ Built as part of Vanderbilt University's NoSQL course (DS5760), enhanced for pro
 
 ## License
 MIT License - Feel free to use this project as a learning resource.
-```
 
----
-
-## **Upload Checklist (5 minutes after cleanup)**
-
-Create GitHub repo: `redis-realtime-chat` or `redis-pubsub-chatbot`
-
-Upload these files:
-- ✅ `Chatbot.py` (cleaned)
-- ✅ `docker-compose.yml` (fixed paths)
-- ✅ `requirements.txt` (new)
-- ✅ `README.md` (professional version)
-- ✅ `.gitignore` (new)
-- ❌ `.env` (do NOT upload this)
-
----
-
-## **Your Resume Entry Gets Updated To:**
-```
-Real-Time Chat Application (Redis Pub/Sub)
-- Architected multi-channel messaging system using Redis Pub/Sub for real-time communication
-- Implemented concurrent message handling with Python threading for simultaneous channel subscriptions
-- Dockerized application with multi-container orchestration (Redis + Python services)
-- Integrated external APIs with error handling and environment-based configuration
-- Technologies: Redis, Python, Docker, Pub/Sub patterns, threading, API integration
-
-GitHub: github.com/[username]/redis-realtime-chat
