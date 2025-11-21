@@ -1,0 +1,30 @@
+services:
+  redis:
+    image: redis:latest
+    container_name: my-redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - ".:/usr/ds5760"
+    networks:
+      - app-network
+
+
+  python-app:
+      image: python:3.9-slim
+      container_name: slim_python
+      ports:
+        - "2000:5000"
+      depends_on:
+        - redis
+      volumes:
+        - ".:/usr/ds5760"
+      working_dir: /usr/ds5760/
+      networks:
+        - app-network
+      command: /bin/sh -c "pip install requests redis pyjokes randfacts thread && tail -f /dev/null"
+
+
+networks:
+  app-network:
+    driver: bridge
